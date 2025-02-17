@@ -1,0 +1,118 @@
+.overview {
+  margin: 24px 80px;
+}
+
+.overview .overview-label {
+  position: relative;
+  display: flex;
+}
+
+.line-label {
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+  height: 4px;
+  background-color: #eaecf0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.overview .overview-label p {
+  padding: 10px 8px;
+  font-weight: 600;
+  width: 120px;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  z-index: 100;
+}
+.overview .overview-label p:hover {
+  cursor: pointer;
+}
+
+.overview-content {
+  margin: 40px 0;
+  max-width: 90%;
+  gap: 40px;
+}
+
+.active-label {
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.hide-content {
+  display: none;
+}
+
+.active-content {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.benefit i {
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  background: #e7f4fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.benefit i img {
+  width: 20px;
+  height: 20px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  background: #e59819;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  .overview {
+    margin: 24px 40px;
+    transition: all 0.3s ease-in-out;
+  }
+  .overview-content {
+    max-width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 824px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 440px) {
+}

@@ -1,0 +1,117 @@
+.rating-products {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.rating-products .rating-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 18px;
+  gap: 10px;
+}
+
+.rating-star {
+  display: flex;
+  min-width: 75px;
+  gap: 4px;
+}
+
+.rating-stas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+  gap: 20px;
+  background-color: #f9fafb;
+  border-radius: 18px;
+}
+
+.rating-stas .stas {
+  width: 70%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.rating-product p:first-child {
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 4.25rem;
+  color: var(--primary-color);
+}
+
+.line-stas {
+  width: 100%;
+  height: 4px;
+  background-color: #eaecf0;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.strange-stas {
+  background-color: #20590c;
+  border-radius: 8px;
+}
+
+.stas p {
+  min-width: 30px;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #164c96;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  .rating-products .rating-product {
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .rating-stas {
+    margin: 20px 0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 1084px) {
+}
+
+@media screen and (max-width: 824px) {
+  .rating-products {
+    grid-template-columns: repeat(1, 1fr);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .rating-stas .stas {
+    flex-wrap: wrap-reverse;
+    gap: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .rating-products .rating-product {
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  .rating-stas {
+    margin: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 658px) {
+}
+
+@media screen and (max-width: 480px) {
+}
+
+@media screen and (max-width: 440px) {
+}

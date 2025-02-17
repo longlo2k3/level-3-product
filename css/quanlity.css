@@ -1,0 +1,112 @@
+.quanlity {
+  display: flex;
+  gap: 24px;
+}
+
+.quanlity div:first-child {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background: #f3f3f3;
+  width: fit-content;
+  border-radius: 28px;
+}
+
+.quanlity i:hover {
+  cursor: pointer;
+}
+
+.quanlity i img {
+  width: 20px;
+}
+
+.quanlity i img:hover {
+  scale: 1.2;
+}
+
+.quanlity p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  padding: 0px 50px;
+}
+
+.quanlity button {
+  background: #3a4980;
+  padding: 10px 60px;
+  border-radius: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.animation-button {
+  animation: animation-button 1s ease-in-out;
+}
+
+@keyframes animation-button {
+  0% {
+    transform: scale(1.1);
+  }
+  25% {
+    transform: scale(0.9);
+  }
+  45% {
+    transform: scale(1.1);
+  }
+  65% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.quanlity button:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.quanlity div:last-child i img {
+  width: 24px;
+}
+
+.quanlity div:last-child span {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: white;
+}
+
+.zoom {
+  animation: scale-animation 1s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes scale-animation {
+  0% {
+    transform: scale(2);
+    background: #ff6600;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+  .quanlity p {
+    padding: 0px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  .quanlity button {
+    padding: 10px 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 964px) {
+}
+
+@media screen and (max-width: 480px) {
+}

@@ -1,0 +1,54 @@
+.delivery {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  border: 1px solid #e4e4e4;
+  padding: 20px;
+  width: 582px;
+  margin: 5px;
+  border-radius: 14px;
+  padding: 17px;
+  gap: 10px;
+}
+
+.delivery .free-delivery {
+  display: flex;
+  gap: 20px;
+}
+
+.delivery div img {
+  width: 24px;
+  height: 24px;
+}
+
+.delivery div p:nth-child(1) {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #1d364d;
+}
+
+.delivery div p:nth-child(2) {
+  color: #726c6c;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1160px) {
+  .delivery {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 964px) {
+}
+
+@media screen and (max-width: 480px) {
+}

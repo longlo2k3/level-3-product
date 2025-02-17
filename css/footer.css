@@ -1,0 +1,29 @@
+.footer-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 120px;
+  border-top: 2px solid #c8c8c8;
+}
+
+.footer-section div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-section img:hover {
+  cursor: pointer;
+}
+
+.straight-line-w {
+  display: inline-block;
+  width: 100px;
+  height: 1px;
+  background-color: #c8c8c8;
+  margin: 0 10px;
+}
